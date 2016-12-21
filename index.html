@@ -116,6 +116,10 @@
       <div class="col-md-2"></div>
     </div>
   </div>
-  
+  <script>
+    function resizeIFrameToFitContent( iFrame ) {
+      iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+    }
+  </script>
 </body>
 </html>
