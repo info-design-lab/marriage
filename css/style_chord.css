@@ -56,7 +56,6 @@ svg {
             user-select: none; /* Non-prefixed version, currently
                                   not supported by any browser */
                 opacity: 1;
-                pointer-events:none;
 }
 
 #play{
