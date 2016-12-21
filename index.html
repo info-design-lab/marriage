@@ -82,7 +82,7 @@
       <div class="col-md-2"></div>
     </div>
   </div>
-  <iframe scrolling="no" onload="resizeIframe(this)" id="education_frame" src="education/index.html" style="width:100%;" frameBorder="0" scrolling="no">  </iframe>
+  <iframe scrolling="no" id="education_frame" src="education/index.html" style="width:100%;" frameBorder="0" scrolling="no">  </iframe>
   <div class="section">
     <div class="row">
       <div class="col-md-2"></div>
@@ -110,9 +110,22 @@
     </div>
   </div>
   <script>
+
+  $(document).ready(function() {
+    setTimeout(function(){
+      $('#education_frame')[0].style.height = $('#education_frame')[0].contentWindow.document.body.scrollHeight + 'px';
+      $('#age_frame')[0].style.height = $('#education_frame')[0].contentWindow.document.body.scrollHeight + 'px';
+      $('#religion_frame')[0].style.height = $('#education_frame')[0].contentWindow.document.body.scrollHeight + 'px';
+    }, 1000);
+    });
+
+  /*
   function resizeIframe(obj) {
+    console.log(obj);
+    console.log($('#education_frame')[0])
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
   }
+  */
   </script>
 </body>
 </html>
