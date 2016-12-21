@@ -4253,13 +4253,17 @@
                 while (++g < o) d += s[m][g];
                 n.push(d), h.push(d3.range(o)), p += d
             }
+
             a && c.sort(function(e, t) {
                 return a(n[e], n[t])
             }), f && h.forEach(function(e, t) {
-                e.sort(function(e, n) {
-                    return f(s[t][e], s[t][n])
-                })
+                //e.forEach(function(e, n) {
+                    //return f(s[t][e], s[t][n])
+                //})
+                e.reverse();
+                
             }), p = (2 * Math.PI - u * o) / p, d = 0, m = -1;
+
             while (++m < o) {
                 v = d, g = -1;
                 while (++g < o) {
