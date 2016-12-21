@@ -124,7 +124,7 @@ d3.csv("data/colors.csv", function(rel) {
             step: 1,
             range: {
                 'min': [0],
-                'max': [31]
+                'max': [32]
             },
             });
 
@@ -322,7 +322,7 @@ function mycode() {
         stepSlider.noUiSlider.set(slider_value);
         slider_value = slider_value + 1;
         document.getElementById("play").src = "images/pause.png";
-    } else if (slider_value == 32) {
+    } else if (slider_value == 32 && playing!=2) {
         playing = 2;
         document.getElementById("play").src = "images/reset.png";
     }
