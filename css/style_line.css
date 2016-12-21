@@ -1,0 +1,48 @@
+body {
+    width: 100%;
+    font-family:'Exo 2', sans-serif;
+    text-align: center;
+}
+
+.line-chart-container{
+    margin:20px auto;
+    width: 1000px;
+}
+
+.line {
+  fill: none;
+  stroke-width: 2px;
+  float: left;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+.tooltip circle{
+  fill:steelblue;
+}
+.marker{
+  stroke:#666;
+  stroke-width:.4px;
+}
+.description text{
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.chart{
+  float: left;
+  background-color: white;
+}
+.line-chart-container svg{
+    color: #666;
+    font-family:'Roboto', sans-serif;
+    margin-top: 30px;
+    cursor: default;
+}
+.description rect{
+  stroke: #000;
+  fill:#aaa;
+  opacity: 0.1;
+}
