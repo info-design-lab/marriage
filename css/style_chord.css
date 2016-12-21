@@ -1,0 +1,81 @@
+#circle circle {
+    fill: none;
+}
+
+path.chord {
+    stroke: #000;
+    stroke-width: .10px;
+    transition: opacity 0.3s;
+}
+
+ #circle:hover path.fade {
+    opacity: 0;
+}
+
+#circle:hover{
+   opacity: 0.9;
+}
+
+#chart_placeholder {
+    text-align: center;
+    margin: 0px auto;
+    color:#fff;
+    height: 600px;
+    width: 900px;
+}
+
+text{
+    fill: black;
+}
+
+svg {
+    font-size: 10px;
+    color: #666;
+    font-family:'Exo 2', sans-serif;
+}
+
+#slider{
+  width:60%;
+  margin: 0px;
+  margin:auto;
+  margin-top: 0px;
+}
+
+.playbar{
+  width: 700px;
+  height: 50px;
+  margin: auto !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+     -khtml-user-select: none; /* Konqueror */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+                opacity: 1;
+}
+
+#play{
+  position: absolute;
+  left: 423px;
+  bottom: -15px;
+  opacity: 0.6;
+  cursor:pointer;
+}
+
+.color-labels-box{
+  float: left;
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  margin-right: 5px;
+  opacity: 0.5
+}
+
+.color-labels{
+  text-align:left;
+  font-size: 12px;
+}
