@@ -124,7 +124,7 @@ d3.csv("data/colors.csv", function(rel) {
             step: 1,
             range: {
                 'min': [0],
-                'max': [32]
+                'max': [31]
             },
         });
 
@@ -316,16 +316,16 @@ function chordTween(oldLayout) {
 
 function mycode() {
     // do some stuff...
-    if (slider_value < 32 && playing == 1 && !firstrun) {
+    if (slider_value <= 31 && playing == 1 && !firstrun) {
         stepSlider.noUiSlider.set(slider_value);
         slider_value = slider_value + 1;
         document.getElementById("play").src = "images/pause.png";
     }
-    else if (slider_value == 32 && playing!=2) {
+    else if (slider_value == 31 && playing!=2) {
         playing = 2;
         document.getElementById("play").src = "images/reset.png";
     }
-    else if (slider_value < 32 && playing == 2 && !firstrun) {
+    else if (slider_value < 31 && playing == 2 && !firstrun) {
         document.getElementById("play").src = "images/pause.png";
         playing=1;
     }
