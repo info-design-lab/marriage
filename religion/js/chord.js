@@ -300,7 +300,7 @@ function chordTween(oldLayout) {
 
 function mycode() {
     // do some stuff...
-    if (slider_value < 31 && playing == 1 && !firstrun) {
+    if (slider_value <= 31 && playing == 1 && !firstrun) {
         stepSlider.noUiSlider.set(slider_value);
         slider_value = slider_value + 1;
         document.getElementById("play").src = "images/pause.png";
