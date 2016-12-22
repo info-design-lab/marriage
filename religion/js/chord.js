@@ -21,7 +21,7 @@ var neighborhoods;
 function getDefaultLayout() {
     return customChordLayout()
     .padding(0.03)
-    
+
     .sortChords(d3.ascending);
 }
 
@@ -95,6 +95,31 @@ label.append("foreignObject")
 .attr("class", "noselect")
 .attr("class", "color-labels")
 .html(function() {
+  return "<svg width='10' height='10'> \
+        <rect width='10' height='10' style='fill:#e41a1c;' /> \
+      </svg> \
+        Christianity  <br>\
+      <svg width='10' height='10'> \
+        <rect width='10' height='10' style='fill:#377eb8;' /> \
+      </svg> \
+        Buddhism <br>\
+      <svg width='10' height='10'> \
+        <rect width='10' height='10' style='fill:#4daf4a;' /> \
+      </svg> \
+        Taoism <br> \
+        <svg width='10' height='10'> \
+          <rect width='10' height='10' style='fill:#984ea3;' /> \
+        </svg> \
+          Hinduism <br> \
+          <svg width='10' height='10'> \
+            <rect width='10' height='10' style='fill:#ff7f00;' /> \
+          </svg> \
+            Other Religion <br> \
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#DAC237;' /> \
+            </svg> \
+              Non Religious <br>";
+
     return "<div class='color-labels-box' style = 'background: #e41a1c'> </div> Christianity <br /><br /> <div class='color-labels-box' style = 'background: #377eb8'> </div> Buddhism <br /> <br /><div class='color-labels-box' style = 'background: #4daf4a'> </div> Taoism<br /> <br><div class='color-labels-box' style = 'background: #984ea3'> </div> Hinduism<br /> <br><div class='color-labels-box' style = 'background: #ff7f00'> </div> Other Religion<br /> <br><div class='color-labels-box' style = 'background: #DAC237'> </div> Non Religious<br /> <br>";
 });
 

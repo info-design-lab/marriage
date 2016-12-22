@@ -95,7 +95,18 @@ label.append("foreignObject")
 .attr("class", "noselect")
 .attr("class", "color-labels")
 .html(function() {
-    return "<div class='color-labels-box' style = 'background: #377eb8'> </div> Secondary & Below <br /><br /> <div class='color-labels-box' style = 'background: #4daf4a'> </div> Post-secondary <br /> <br /><div class='color-labels-box' style = 'background: #f781bf'> </div> University<br />";
+  return "<svg width='10' height='10'> \
+        <rect width='10' height='10' style='fill:#377eb8;' /> \
+      </svg> \
+        Secondary & Below  <br>\
+      <svg width='10' height='10'> \
+        <rect width='10' height='10' style='fill:#4daf4a;' /> \
+      </svg> \
+        Post-secondary <br>\
+      <svg width='10' height='10'> \
+        <rect width='10' height='10' style='fill:#f781bf;' /> \
+      </svg> \
+        University <br>";
 });
 
 d3.csv("data/colors.csv", function(rel) {

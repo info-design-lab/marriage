@@ -1,4 +1,3 @@
-
 var width = 900,
 height = 620,
 outerRadius = Math.min(width, height) / 2 - 100,
@@ -21,7 +20,7 @@ var neighborhoods;
 function getDefaultLayout() {
     return customChordLayout()
     .padding(0.03)
-    
+
     .sortChords(d3.ascending);
 }
 
@@ -91,11 +90,37 @@ label.append("foreignObject")
 .attr("y", 400)
 .attr("x", 100)
 .append("xhtml:body")
-.style("fill", "#b2b2b2")
 .attr("class", "noselect")
 .attr("class", "color-labels")
 .html(function() {
-    return "<div class='color-labels-box' style = 'background: #e41a1c'> </div> Under 20 <br /><br /> <div class='color-labels-box' style = 'background: #377eb8'> </div> 20-24 <br /> <br /><div class='color-labels-box' style = 'background: #4daf4a'> </div> 25-29 <br /><br /><div class='color-labels-box' style = 'background: #984ea3'> </div> 30-34 <br /><br /><div class='color-labels-box' style = 'background: #ff7f00'> </div> 35-39 <br /><br /><div class='color-labels-box' style = 'background: #DAC237'> </div> 40-44 <br /><br /><div class='color-labels-box' style = 'background: #a65628'> </div> 45-49 <br /><br /><div class='color-labels-box' style = 'background: #f781bf'> </div> 50 and Above <br /><br />";
+    return "<svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#e41a1c;' /> \
+            </svg> \
+              Under 20  <br>\
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#377eb8;' /> \
+            </svg> \
+              20-24 <br>\
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#4daf4a;' /> \
+            </svg> \
+              25-29 <br>\
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#984ea3;' /> \
+            </svg> \
+              30-34 <br>\
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#ff7f00;' /> \
+            </svg> \
+              35-39 <br>\
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#DAC237;' /> \
+            </svg> \
+              45-50 <br>\
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#DAC237;' /> \
+            </svg> \
+              50 and Above";
 });
 
 d3.csv("data/colors.csv", function(rel) {

@@ -66,16 +66,8 @@ svg {
   cursor:pointer;
 }
 
-.color-labels-box{
-  float: left;
-  width: 10px;
-  height: 10px;
-  border: 1px solid rgba(0, 0, 0, .2);
-  margin-right: 5px;
-  opacity: 0.5
-}
-
 .color-labels{
-  text-align:left;
+  float: left !important;
+  text-align: left;
   font-size: 12px;
 }
