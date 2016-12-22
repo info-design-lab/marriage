@@ -25,3 +25,16 @@ html, body{
 	height: 1158;
 	overflow-x: hidden;
 }
+.subt{
+	font-size:1.3rem;
+}
+
+.subt .authors{
+	font-style:italic;
+}
+.authors{
+	margin-top:5px;
+}
+.big_title{
+	margin-top:10px;
+}
