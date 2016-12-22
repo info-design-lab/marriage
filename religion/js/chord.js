@@ -96,31 +96,29 @@ label.append("foreignObject")
 .attr("class", "color-labels")
 .html(function() {
   return "<svg width='10' height='10'> \
-        <rect width='10' height='10' style='fill:#e41a1c;' /> \
+        <rect width='10' height='10' style='fill:#e41a1c;opacity: 0.5;' /> \
       </svg> \
         Christianity  <br>\
       <svg width='10' height='10'> \
-        <rect width='10' height='10' style='fill:#377eb8;' /> \
+        <rect width='10' height='10' style='fill:#377eb8;opacity: 0.5;' /> \
       </svg> \
         Buddhism <br>\
       <svg width='10' height='10'> \
-        <rect width='10' height='10' style='fill:#4daf4a;' /> \
+        <rect width='10' height='10' style='fill:#4daf4a;opacity: 0.5;' /> \
       </svg> \
         Taoism <br> \
         <svg width='10' height='10'> \
-          <rect width='10' height='10' style='fill:#984ea3;' /> \
+          <rect width='10' height='10' style='fill:#984ea3;opacity: 0.5;' /> \
         </svg> \
           Hinduism <br> \
           <svg width='10' height='10'> \
-            <rect width='10' height='10' style='fill:#ff7f00;' /> \
+            <rect width='10' height='10' style='fill:#ff7f00;opacity: 0.5;' /> \
           </svg> \
             Other Religion <br> \
             <svg width='10' height='10'> \
-              <rect width='10' height='10' style='fill:#DAC237;' /> \
+              <rect width='10' height='10' style='fill:#DAC237;opacity: 0.5;' /> \
             </svg> \
               Non Religious <br>";
-
-    return "<div class='color-labels-box' style = 'background: #e41a1c'> </div> Christianity <br /><br /> <div class='color-labels-box' style = 'background: #377eb8'> </div> Buddhism <br /> <br /><div class='color-labels-box' style = 'background: #4daf4a'> </div> Taoism<br /> <br><div class='color-labels-box' style = 'background: #984ea3'> </div> Hinduism<br /> <br><div class='color-labels-box' style = 'background: #ff7f00'> </div> Other Religion<br /> <br><div class='color-labels-box' style = 'background: #DAC237'> </div> Non Religious<br /> <br>";
 });
 
 d3.csv("data/colors.csv", function(rel) {

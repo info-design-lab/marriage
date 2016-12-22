@@ -96,15 +96,15 @@ label.append("foreignObject")
 .attr("class", "color-labels")
 .html(function() {
   return "<svg width='10' height='10'> \
-        <rect width='10' height='10' style='fill:#377eb8;' /> \
+        <rect width='10' height='10' style='fill:#377eb8;opacity: 0.5;' /> \
       </svg> \
         Secondary & Below  <br>\
       <svg width='10' height='10'> \
-        <rect width='10' height='10' style='fill:#4daf4a;' /> \
+        <rect width='10' height='10' style='fill:#4daf4a;opacity: 0.5;' /> \
       </svg> \
         Post-secondary <br>\
       <svg width='10' height='10'> \
-        <rect width='10' height='10' style='fill:#f781bf;' /> \
+        <rect width='10' height='10' style='fill:#f781bf;opacity: 0.5;' /> \
       </svg> \
         University <br>";
 });

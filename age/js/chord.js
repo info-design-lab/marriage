@@ -94,31 +94,31 @@ label.append("foreignObject")
 .attr("class", "color-labels")
 .html(function() {
     return "<svg width='10' height='10'> \
-              <rect width='10' height='10' style='fill:#e41a1c;' /> \
+              <rect width='10' height='10' style='fill:#e41a1c;opacity: 0.5;' /> \
             </svg> \
               Under 20  <br>\
             <svg width='10' height='10'> \
-              <rect width='10' height='10' style='fill:#377eb8;' /> \
+              <rect width='10' height='10' style='fill:#377eb8;opacity: 0.5;' /> \
             </svg> \
               20-24 <br>\
             <svg width='10' height='10'> \
-              <rect width='10' height='10' style='fill:#4daf4a;' /> \
+              <rect width='10' height='10' style='fill:#4daf4a;opacity: 0.5;' /> \
             </svg> \
               25-29 <br>\
             <svg width='10' height='10'> \
-              <rect width='10' height='10' style='fill:#984ea3;' /> \
+              <rect width='10' height='10' style='fill:#984ea3;opacity: 0.5;' /> \
             </svg> \
               30-34 <br>\
             <svg width='10' height='10'> \
-              <rect width='10' height='10' style='fill:#ff7f00;' /> \
+              <rect width='10' height='10' style='fill:#ff7f00;opacity: 0.5;' /> \
             </svg> \
               35-39 <br>\
             <svg width='10' height='10'> \
-              <rect width='10' height='10' style='fill:#DAC237;' /> \
+              <rect width='10' height='10' style='fill:#DAC237;opacity: 0.5;' /> \
             </svg> \
               45-50 <br>\
             <svg width='10' height='10'> \
-              <rect width='10' height='10' style='fill:#DAC237;' /> \
+              <rect width='10' height='10' style='fill:#DAC237;opacity: 0.5;' /> \
             </svg> \
               50 and Above";
 });
