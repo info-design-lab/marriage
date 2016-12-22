@@ -15,6 +15,50 @@ var titles={
   "BO.csv":"Brides(Other Religions)",
   "BN.csv":"Non Religious Brides"
 };
+
+d3.select("body")
+.style("position","relative")
+.insert("g",":nth-child(3)")
+.style("position","absolute")
+.attr("width", 100)
+.attr("height", 110)
+.style("top", 700)
+.style("left", 50)
+.append("foreignObject",":nth-child(2)")
+.attr("width", 100)
+.attr("height", 110)
+.append("xhtml:body")
+.style("fill", "#b2b2b2")
+.attr("class", "noselect")
+.attr("class", "color-labels")
+.html(function() {
+  return "<svg width='10' height='10'> \
+        <rect width='10' height='10' style='fill:#e41a1c;opacity: 0.5;' /> \
+      </svg> \
+        Christianity  <br>\
+      <svg width='10' height='10'> \
+        <rect width='10' height='10' style='fill:#377eb8;opacity: 0.5;' /> \
+      </svg> \
+        Buddhism <br>\
+      <svg width='10' height='10'> \
+        <rect width='10' height='10' style='fill:#4daf4a;opacity: 0.5;' /> \
+      </svg> \
+        Taoism <br> \
+        <svg width='10' height='10'> \
+          <rect width='10' height='10' style='fill:#984ea3;opacity: 0.5;' /> \
+        </svg> \
+          Hinduism <br> \
+          <svg width='10' height='10'> \
+            <rect width='10' height='10' style='fill:#ff7f00;opacity: 0.5;' /> \
+          </svg> \
+            Other Religion <br> \
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#DAC237;opacity: 0.5;' /> \
+            </svg> \
+              Non Religious <br>";
+});
+
+
 var q = d3.queue();
 q.defer(Religionlinechart,0);
 q.defer(Religionlinechart,1);
