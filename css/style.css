@@ -27,13 +27,12 @@ html, body{
 }
 .subt{
 	font-size:1.3rem;
-}
-
-.subt .authors{
 	font-style:italic;
 }
+
 .authors{
 	margin-top:5px;
+	font-style:italic;
 }
 .big_title{
 	margin-top:10px;
