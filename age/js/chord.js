@@ -232,9 +232,12 @@ function updateChords(matrix) {
     .attrTween("d", chordTween(last_layout))
     .transition().duration(duration).attr("opacity", 0.5);
 
-    groupG.on("mouseover", function(d) {
+    groupG.on("mouseover", function(d, e) {
         chordPaths.classed("fade", function(p) {
             return ((p.source.index != d.index) && (p.target.index != d.index));
+        });
+        chordPaths.classed("highlight", function(p) {
+            return !((p.source.index != d.index) && (p.target.index != d.index));
         });
     });
 

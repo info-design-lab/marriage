@@ -234,6 +234,9 @@ function updateChords(matrix) {
         chordPaths.classed("fade", function(p) {
             return ((p.source.index != d.index) && (p.target.index != d.index));
         });
+        chordPaths.classed("highlight", function(p) {
+            return !((p.source.index != d.index) && (p.target.index != d.index));
+        });
     });
 
     last_layout = layout;

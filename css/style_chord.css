@@ -12,6 +12,10 @@ path.chord {
     opacity: 0;
 }
 
+#circle:hover path.highlight {
+   opacity: 0.8;
+}
+
 #circle:hover{
    opacity: 0.9;
 }
