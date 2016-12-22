@@ -13,6 +13,54 @@ var titles={
   "B25-29.csv":"Brides - 25-29",
   "B30-34.csv":"Brides - 30-34"
 };
+
+
+d3.select("body")
+.style("position","relative")
+.insert("g",":nth-child(3)")
+.style("position","absolute")
+.attr("width", 100)
+.attr("height", 110)
+.style("top", 700)
+.style("left", 50)
+.append("foreignObject",":nth-child(2)")
+.attr("width", 100)
+.attr("height", 110)
+.append("xhtml:body")
+.attr("class", "noselect")
+.attr("class", "color-labels")
+.attr("width","100px")
+.attr("height","110px")
+.html(function() {
+    return "<svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#e41a1c;opacity: 0.5;' /> \
+            </svg> \
+              Under 20  <br>\
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#377eb8;opacity: 0.5;' /> \
+            </svg> \
+              20-24 <br>\
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#4daf4a;opacity: 0.5;' /> \
+            </svg> \
+              25-29 <br>\
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#984ea3;opacity: 0.5;' /> \
+            </svg> \
+              30-34 <br>\
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#ff7f00;opacity: 0.5;' /> \
+            </svg> \
+              35-39 <br>\
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#DAC237;opacity: 0.5;' /> \
+            </svg> \
+              45-50 <br>\
+            <svg width='10' height='10'> \
+              <rect width='10' height='10' style='fill:#DAC237;opacity: 0.5;' /> \
+            </svg> \
+              50 and Above";
+});
 var q = d3.queue();
 q.defer(Agelinechart,0);
 q.defer(Agelinechart,1);
@@ -31,7 +79,6 @@ var x = d3.scaleLinear().range([0, width2]);
 var y = d3.scaleLinear().range([height2, 0]);
 var maxy=0;
 var bisectYear=d3.bisector(function(d){return d.Year}).left;
-
 
 
 function Agelinechart(i,callback){
