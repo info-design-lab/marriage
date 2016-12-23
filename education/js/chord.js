@@ -98,21 +98,6 @@ label.append("foreignObject")
         return "<div class='color-labels-box' style = 'background: #377eb8'> </div> Secondary & Below <br /><br /> <div class='color-labels-box' style = 'background: #4daf4a'> </div> Post-secondary <br /> <br /><div class='color-labels-box' style = 'background: #f781bf'> </div> University<br />";
     });
 
-label.append("foreignObject")
-    .attr("width", 100)
-    .attr("height", 100)
-    .attr("y", 10)
-    .attr("x", width / 2 - 50)
-    .append("xhtml:body")
-    .style("fill", "#000")
-    .style("text-align", "center")
-    .style("font-size", "20px")
-    .attr("class", "noselect")
-    .attr("id", "year-label")
-    .html(function() {
-        return "<p>1984</p>";
-    });
-
 d3.csv("data/colors.csv", function(rel) {
     d3.json("data/matrix.json", function(matrix) {
         dataset = matrix;
@@ -131,7 +116,6 @@ d3.csv("data/colors.csv", function(rel) {
         stepSlider.noUiSlider.on('update', function(values, handle) {
             slider_value = parseInt(values);
             updateChords(dataset[parseInt(values)]);
-            $("#year-label").html(slider_value + 1984);
         });
 
 
